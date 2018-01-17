@@ -1,0 +1,152 @@
+.wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-height: 90%;
+}
+
+.wrapper * {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.ad {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ad__close {
+    z-index: 10;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #212121;
+    text-decoration: none;
+}
+
+.ad__slider {
+    overflow: hidden;
+}
+
+    .slider__tape {
+        position: relative;
+        width: 9999%;
+        overflow: hidden;
+        left: 0;
+        transition: left .5s;
+    }
+
+    .slider__slide {
+        float: left;
+    }
+
+    .slider__slide img {
+        display: block;
+        margin: 0 auto;
+    }
+
+.ad__container {
+    margin: 0 auto;
+}
+
+.ad__banner {
+    display: block;
+    margin: 0 auto;
+}
+
+.ad__info {
+    display: table;
+}
+
+    .ad__info--offset {
+        margin-top: 70px;
+    }
+
+    .info__img {
+        width: 80px;
+        height: 80px;
+        vertical-align: middle;
+    }
+
+    .info__text {
+        color: #ccc;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+
+    .info__col {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .info__col:last-of-type {
+        padding-left: 20px;
+    }
+
+    .info__star {
+        color: #f1e5df;
+    }
+
+    .info__star--checked {
+        color: #f19733;
+    }
+
+.ad__cta {
+    background: #eb5033;
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.ad__cta--offset {
+    margin-top: 20px;
+}
+
+.ad__cta--offset-small {
+    margin-top: 7px;
+}
+
+.mode--landscape {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.landscape__col {
+    width: 50%;
+    float: left;
+}
+
+.landscape__col:last-of-type {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
